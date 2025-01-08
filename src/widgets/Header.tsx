@@ -1,48 +1,19 @@
-import { Link } from "react-router";
+import Logo from "~/assets/images/logo.svg";
 
-const NAV_ITEMS = [
-  {
-    title: "Home",
-    link: "/",
-  },
-  {
-    title: "Tours",
-    link: "/tours",
-  },
-  {
-    title: "Service",
-    link: "/services",
-  },
-  {
-    title: "MICE",
-    link: "/mice",
-  },
-  {
-    title: "Blog",
-    link: "/blogs",
-  },
-  {
-    title: "About Us",
-    link: "/about-us",
-  },
-  {
-    title: "Membership",
-    link: "/membership",
-  },
-];
+import {Search} from "~/widgets/Search";
+import {Navbar} from "~/widgets/Navbar";
+
 
 export function Header() {
   return (
     <div>
-      <nav>
-        <ul className="flex gap-6">
-          {NAV_ITEMS.map((item) => (
-            <Link key={item.link} to={item.link} className="cursor-pointer">
-              {item.title}
-            </Link>
-          ))}
-        </ul>
-      </nav>
+      <div className="flex items-center justify-between lg:px-20 lg:py-2 px-5 py-2">
+        <div className="flex">
+          <img src={Logo} alt="" />
+          <Search />
+        </div>
+        < Navbar />
+      </div>
     </div>
   );
 }

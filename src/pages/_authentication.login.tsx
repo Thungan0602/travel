@@ -18,7 +18,7 @@ export default function Login() {
       <p className="underline font-bold mt-6 mb-8">Forgot Password</p>
       <Button> Sign In</Button>
       <p className="py-8 font-normal text-center">OR</p>
-            <div className="flex gap-4">
+            <div className="lg:flex gap-4">
                 <button className="flex gap-4 px-[42.5px] w-full py-[20.5px] bg-[#FFFFFF] border border-[#E0E0E9] ">
                     <img src={Google} alt="" />
                     <p>Sign up with Google</p>

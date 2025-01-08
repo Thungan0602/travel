@@ -26,7 +26,7 @@ export default function Register() {
             </div>
             <Button>Create an account</Button>
             <p className="py-8 font-normal">OR</p>
-            <div className="flex gap-4">
+            <div className="lg:flex gap-4">
                 <button className="flex gap-4 px-[42.5px] w-full py-[20.5px] bg-[#FFFFFF] border border-[#E0E0E9] ">
                     <img src={Google} alt="" />
                     <p>Sign up with Google</p>
